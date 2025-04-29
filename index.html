@@ -24,9 +24,8 @@
 
     <!-- heading section -->
     <h1 class="welcome-heading">Welcome to Vintage Group</h1>
-    <!-- AR section -->
     <div class="section ar-section" id="modelling">
-      <h2>Enhanced Modelling</h2>
+      <h2 id="heading_enhanced">Enhanced Modelling</h2>
       <div class="model-boxes">
         <!-- plot models -->
         <div class="model-box">
@@ -36,55 +35,39 @@
               <img src="./images/plot.jpg" alt="Plot Model 1 in ECR Chennai" />
               <small>One ground Villa<br /><strong>AS IS</strong></small>
             </div>
-
+    
             <div class="image-item">
               <video
                 src="./video/Augmented reality video 1.mp4"
                 autoplay
                 muted
                 loop
-                controls
-                playsinline
                 class="ar-video"
-                style="
-                  width: 100%;
-                  height: auto;
-                  border-radius: 8px;
-                  cursor: pointer;
-                "
+                style="width: 100%; height: auto; border-radius: 8px;"
               ></video>
               <small><strong>TO BE (AUGMENTED REALITY)</strong></small>
             </div>
           </div>
         </div>
-
+    
         <!-- villa models -->
         <div class="model-box">
           <h3>Luxury Villas near ECR Road, Chennai</h3>
           <div class="image-grid">
             <div class="image-item">
-              <img
-                src="./images/villa.jpg"
-                alt="Villa Model 1 in ECR Chennai"
-              />
+              <img src="./images/villa.jpg" alt="Villa Model 1 in ECR Chennai" />
               <small>Half ground villa<br /><strong>AS IS</strong></small>
             </div>
-
+    
             <div class="image-item">
               <video
                 src="./video/Augmented reality video 2.mp4"
                 autoplay
                 muted
                 loop
-                controls
-                playsinline
                 class="ar-video"
-                style="
-                  width: 100%;
-                  height: auto;
-                  border-radius: 8px;
-                  cursor: pointer;
-                "
+                style="width: 100%; height: auto; border-radius: 8px;"
+                onclick="preventFullscreen(event)"
               ></video>
               <small><strong>TO BE (AUGMENTED REALITY)</strong></small>
             </div>
@@ -163,7 +146,7 @@
 
     <!-- chartbot section -->
     <div class="section" id="bot">
-      <h2>Intelligence Chat Bot</h2>
+      <h2 class="bot_header" id="bot_header">Intelligence Chat Bot</h2>
       <p>Talk or type to get help from our chat bot assistant</p>
     </div>
 

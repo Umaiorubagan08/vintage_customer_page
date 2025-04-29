@@ -135,3 +135,23 @@ document.querySelectorAll('.ar-video').forEach(video => {
     }
   });
 });
+
+
+
+// Function to prevent fullscreen when the video is clicked
+function preventFullscreen(event) {
+  // Disable fullscreen request
+  event.preventDefault();
+  
+  // Check if the fullscreen API exists in the browser
+  const video = event.target;
+
+  if (video.requestFullscreen) {
+    // Prevent the fullscreen request
+    video.exitFullscreen();
+  } else if (video.mozRequestFullScreen) { // Firefox
+    video.mozCancelFullScreen();
+  } else if (video.webkitRequestFullscreen) { // Chrome/Safari
+    video.webkitExitFullscreen();
+  }
+}
