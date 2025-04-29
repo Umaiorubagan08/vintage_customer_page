@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vintage Group Dashboard</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./customer_style.css" />
+  </head>
+
+  <body>
+    <!-- logo for vintage website -->
+    <div class="topbar">
+      <img src="./images/vintage logo.png" alt="Logo" class="logo" />
+      <h1>Vintage Group</h1>
+    </div>
+
+    <!-- heading section -->
+    <h1 class="welcome-heading">Welcome to Vintage Group</h1>
+    <!-- AR section -->
+    <div class="section ar-section" id="modelling">
+      <h2>Enhanced Modelling</h2>
+      <div class="model-boxes">
+        <!-- plot models -->
+        <div class="model-box">
+          <h3>Premium Plots near ECR Road, Chennai</h3>
+          <div class="image-grid">
+            <div class="image-item">
+              <img src="./images/plot.jpg" alt="Plot Model 1 in ECR Chennai" />
+              <small>One ground Villa<br /><strong>AS IS</strong></small>
+            </div>
+
+            <div class="image-item">
+              <video
+                src="./video/Augmented reality video 1.mp4"
+                autoplay
+                muted
+                loop
+                controls
+                playsinline
+                class="ar-video"
+                style="
+                  width: 100%;
+                  height: auto;
+                  border-radius: 8px;
+                  cursor: pointer;
+                "
+              ></video>
+              <small><strong>TO BE (AUGMENTED REALITY)</strong></small>
+            </div>
+          </div>
+        </div>
+
+        <!-- villa models -->
+        <div class="model-box">
+          <h3>Luxury Villas near ECR Road, Chennai</h3>
+          <div class="image-grid">
+            <div class="image-item">
+              <img
+                src="./images/villa.jpg"
+                alt="Villa Model 1 in ECR Chennai"
+              />
+              <small>Half ground villa<br /><strong>AS IS</strong></small>
+            </div>
+
+            <div class="image-item">
+              <video
+                src="./video/Augmented reality video 2.mp4"
+                autoplay
+                muted
+                loop
+                controls
+                playsinline
+                class="ar-video"
+                style="
+                  width: 100%;
+                  height: auto;
+                  border-radius: 8px;
+                  cursor: pointer;
+                "
+              ></video>
+              <small><strong>TO BE (AUGMENTED REALITY)</strong></small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- payment section -->
+    <div class="section payment-section" id="payment">
+      <h2 class="section-title" id="payment_h2">Payment Schedule</h2>
+      <div class="payment-card">
+        <table class="payment-table">
+          <thead>
+            <tr>
+              <th>Milestone</th>
+              <th>Date</th>
+              <th>Amount (₹)</th>
+              <th>On Time Payment</th>
+              <th>Receipt</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Booking Advance</td>
+              <td><input type="date" /></td>
+              <td><input type="number" min="0" /></td>
+              <td>
+                <button class="btn-yes" type="button">YES</button>
+                <button class="btn-no" type="button">NO</button>
+              </td>
+              <td>
+                <a
+                  href="https://cloudstorage.com/receipts/booking.pdf"
+                  target="_blank"
+                  >View Receipt</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>Construction Start</td>
+              <td><input type="date" /></td>
+              <td><input type="number" min="0" /></td>
+              <td>
+                <button class="btn-yes" type="button">YES</button>
+                <button class="btn-no" type="button">NO</button>
+              </td>
+              <td>
+                <a
+                  href="https://cloudstorage.com/receipts/construction.pdf"
+                  target="_blank"
+                  >View Receipt</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>Completion</td>
+              <td><input type="date" /></td>
+              <td><input type="number" min="0" /></td>
+              <td>
+                <button class="btn-yes" type="button">YES</button>
+                <button class="btn-no" type="button">NO</button>
+              </td>
+              <td>
+                <a
+                  href="https://cloudstorage.com/receipts/completion.pdf"
+                  target="_blank"
+                  >View Receipt</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- chartbot section -->
+    <div class="section" id="bot">
+      <h2>Intelligence Chat Bot</h2>
+      <p>Talk or type to get help from our chat bot assistant</p>
+    </div>
+
+    <!-- Chatbot Icon -->
+    <div id="chatbot-icon" title="Chat with Sudha">
+      <i class="fa-solid fa-robot"></i>
+    </div>
+
+    <!-- Chat Window -->
+    <div id="chat-window">
+      <div id="chat-header">
+        <i class="fas fa-comment-dots"></i>
+        <span>Sudha - Real Estate Assistant</span>
+      </div>
+
+      <div id="chat-messages"></div>
+
+      <div id="chat-input-area">
+        <input
+          type="text"
+          id="chat-input"
+          placeholder="Ask Sudha anything..."
+        />
+        <button onclick="sendMessage()" title="Send">
+          <i class="fas fa-paper-plane"></i>
+        </button>
+        <button onclick="startListening()" title="Voice Input">
+          <i class="fas fa-microphone"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- js script file attached, later need to implement this  -->
+    <script src="./customer_script.js"></script>
+  </body>
+</html>
