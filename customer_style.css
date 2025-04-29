@@ -408,19 +408,6 @@
     padding: 2px;
   }
 
-  .ar-placeholder-box {
-    width: 120px;
-    height: auto;
-  }
-
-  .ar-placeholder-box img {
-    width: 80px;
-    height: 80px;
-  }
-
-  .ar-placeholder-box p {
-    font-size: 13px;
-  }
 }
 
 @media (max-width: 480px) {
